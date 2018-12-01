@@ -23,3 +23,11 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# 追加忽略文件，以.gitignore文件所在的目录为相对路径
+mvn*
+*.log
+*.gz
+
+# /开头表示是一个目录， 以.gitignore文件所在的目录为相对路径
+/.mvn
