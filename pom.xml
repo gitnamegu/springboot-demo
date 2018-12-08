@@ -86,6 +86,7 @@
 
     <build>
         <plugins>
+            <!--打包插件，项目打包时会将依赖的jar包一块打包进去。-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

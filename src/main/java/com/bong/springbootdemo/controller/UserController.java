@@ -1,5 +1,6 @@
 package com.bong.springbootdemo.controller;
 
+import com.bong.springbootdemo.exception.ReportException;
 import com.bong.springbootdemo.pojo.User;
 import com.bong.springbootdemo.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,8 +34,19 @@ public class UserController {
         } else {
             return "false";
         }
+    }
 
 
+    /**
+     * 自定义异常
+     * @return
+     */
+    @RequestMapping("/exce")
+    public String exce() {
+        if (true) {
+            throw new ReportException("yichangle");
+        }
+        return null;
     }
 
 }
